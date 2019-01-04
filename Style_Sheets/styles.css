@@ -1,0 +1,26 @@
+﻿body {
+	background-color: black;
+}
+
+p {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: lighter;
+	color: lime;
+}
+
+p:hover {
+	color: black;
+	background-color: lime;
+	font-weight: unset;
+}
+
+img:hover {
+	border: 1px solid lime;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 99%;
+}
