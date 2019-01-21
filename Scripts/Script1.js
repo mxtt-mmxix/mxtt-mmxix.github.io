@@ -4,7 +4,6 @@ var lineCount = 0
 function main() {
     clockUpdate();
     uptimeUpdate();
-    print("New login at: " + getTime());
 }
 
 function newElement(element, content) {
