@@ -8,6 +8,16 @@ p {
 	color: lime;
 }
 
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: lighter;
+	color: lime;
+}
+
+a {
+	text-decoration: none;
+}
+
 p:hover {
 	color: black;
 	background-color: lime;
