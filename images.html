@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <title>Matthew McCall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: "Roboto", sans-serif
+    }
+
+    .w3-bar-block .w3-bar-item {
+      padding: 16px;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+      <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+      <a class="w3-bar-item w3-button" href="index.html">About</a>
+      <a class="w3-bar-item w3-button w3-black" href="images.html">Images</a>
+      <a class="w3-bar-item w3-button" href="audio.html">Audio</a>
+      <a class="w3-bar-item w3-button" href="code.html">Code</a>
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+    </div>
+
+    <div class="w3-main" style="margin-left:250px;">
+
+      <div id="myTop" class="w3-container w3-top w3-theme w3-large">
+        <p><i class="fa fa-bars w3-button w3-black w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+          <span id="myIntro" class="w3-hide">Images</span></p>
+      </div>
+
+      <header class="w3-container w3-theme" style="padding:64px 32px">
+        <h1 class="w3-xxxlarge">Images</h1>
+      </header>
+
+      <div class="w3-container" style="padding:32px">
+
+        <div class="w3-panel w3-card-4">
+          <p>Browse full resolution images <a href="https://1drv.ms/f/s!AnsVMEDPPDLBgfw6P45a3Rx8tHyLYQ">here</a>.</p>
+        </div>
+
+        <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+          <div class="w3-third">
+            <img src="assets/img/jpeg/1.jpg" style="width:100%">
+            <img src="assets/img/jpeg/2.jpg" style="width:100%">
+            <img src="assets/img/jpeg/3.jpg" style="width:100%">
+            <img src="assets/img/jpeg/6.jpg" style="width:100%">
+            <img src="assets/img/jpeg/9.jpg" style="width:100%">
+            <img src="assets/img/jpeg/30.jpg" style="width:100%">
+            <img src="assets/img/jpeg/64.jpg" style="width:100%">
+            <img src="assets/img/jpeg/34.jpg" style="width:100%">
+            <img src="assets/img/jpeg/13.jpg" style="width:100%">
+            <img src="assets/img/jpeg/14.jpg" style="width:100%">
+            <img src="assets/img/jpeg/15.jpg" style="width:100%">
+            <img src="assets/img/jpeg/16.jpg" style="width:100%">
+            <img src="assets/img/jpeg/17.jpg" style="width:100%">
+            <img src="assets/img/jpeg/18.jpg" style="width:100%">
+            <img src="assets/img/jpeg/19.jpg" style="width:100%">
+            <img src="assets/img/jpeg/20.jpg" style="width:100%">
+            <img src="assets/img/jpeg/21.jpg" style="width:100%">
+            <img src="assets/img/jpeg/22.jpg" style="width:100%">
+            <img src="assets/img/jpeg/23.jpg" style="width:100%">
+            <img src="assets/img/jpeg/24.jpg" style="width:100%">
+            <img src="assets/img/jpeg/25.jpg" style="width:100%">
+            <img src="assets/img/jpeg/26.jpg" style="width:100%">
+            <img src="assets/img/jpeg/27.jpg" style="width:100%">
+            <img src="assets/img/jpeg/86.jpg" style="width:100%">
+            <img src="assets/img/jpeg/54.jpg" style="width:100%">
+            <img src="assets/img/jpeg/52.jpg" style="width:100%">
+            <img src="assets/img/jpeg/50.jpg" style="width:100%">
+            <img src="assets/img/jpeg/62.jpg" style="width:100%">
+            <img src="assets/img/jpeg/58.jpg" style="width:100%">
+            <img src="assets/img/jpeg/56.jpg" style="width:100%">
+          </div>
+          <div class="w3-third">
+            <img src="assets/img/jpeg/4.jpg" style="width:100%">
+            <img src="assets/img/jpeg/5.jpg" style="width:100%">
+            <img src="assets/img/jpeg/8.jpg" style="width:100%">
+            <img src="assets/img/jpeg/10.jpg" style="width:100%">
+            <img src="assets/img/jpeg/11.jpg" style="width:100%">
+            <img src="assets/img/jpeg/32.jpg" style="width:100%">
+            <img src="assets/img/jpeg/63.jpg" style="width:100%">
+            <img src="assets/img/jpeg/35.jpg" style="width:100%">
+            <img src="assets/img/jpeg/36.jpg" style="width:100%">
+            <img src="assets/img/jpeg/37.jpg" style="width:100%">
+            <img src="assets/img/jpeg/38.jpg" style="width:100%">
+            <img src="assets/img/jpeg/39.jpg" style="width:100%">
+            <img src="assets/img/jpeg/40.jpg" style="width:100%">
+            <img src="assets/img/jpeg/41.jpg" style="width:100%">
+            <img src="assets/img/jpeg/42.jpg" style="width:100%">
+            <img src="assets/img/jpeg/43.jpg" style="width:100%">
+            <img src="assets/img/jpeg/44.jpg" style="width:100%">
+            <img src="assets/img/jpeg/45.jpg" style="width:100%">
+            <img src="assets/img/jpeg/46.jpg" style="width:100%">
+            <img src="assets/img/jpeg/47.jpg" style="width:100%">
+            <img src="assets/img/jpeg/48.jpg" style="width:100%">
+            <img src="assets/img/jpeg/49.jpg" style="width:100%">
+            <img src="assets/img/jpeg/51.jpg" style="width:100%">
+            <img src="assets/img/jpeg/53.jpg" style="width:100%">
+            <img src="assets/img/jpeg/87.jpg" style="width:100%">
+            <img src="assets/img/jpeg/55.jpg" style="width:100%">
+          </div>
+          <div class="w3-third">
+            <img src="assets/img/jpeg/59.jpg" style="width:100%">
+            <img src="assets/img/jpeg/60.jpg" style="width:100%">
+            <img src="assets/img/jpeg/61.jpg" style="width:100%">
+            <img src="assets/img/jpeg/7.jpg" style="width:100%">
+            <img src="assets/img/jpeg/12.jpg" style="width:100%">
+            <img src="assets/img/jpeg/31.jpg" style="width:100%">
+            <img src="assets/img/jpeg/33.jpg" style="width:100%">
+            <img src="assets/img/jpeg/65.jpg" style="width:100%">
+            <img src="assets/img/jpeg/66.jpg" style="width:100%">
+            <img src="assets/img/jpeg/67.jpg" style="width:100%">
+            <img src="assets/img/jpeg/68.jpg" style="width:100%">
+            <img src="assets/img/jpeg/69.jpg" style="width:100%">
+            <img src="assets/img/jpeg/70.jpg" style="width:100%">
+            <img src="assets/img/jpeg/71.jpg" style="width:100%">
+            <img src="assets/img/jpeg/72.jpg" style="width:100%">
+            <img src="assets/img/jpeg/73.jpg" style="width:100%">
+            <img src="assets/img/jpeg/74.jpg" style="width:100%">
+            <img src="assets/img/jpeg/75.jpg" style="width:100%">
+            <img src="assets/img/jpeg/76.jpg" style="width:100%">
+            <img src="assets/img/jpeg/77.jpg" style="width:100%">
+            <img src="assets/img/jpeg/78.jpg" style="width:100%">
+            <img src="assets/img/jpeg/79.jpg" style="width:100%">
+            <img src="assets/img/jpeg/80.jpg" style="width:100%">
+            <img src="assets/img/jpeg/81.jpg" style="width:100%">
+            <img src="assets/img/jpeg/82.jpg" style="width:100%">
+            <img src="assets/img/jpeg/83.jpg" style="width:100%">
+            <img src="assets/img/jpeg/84.jpg" style="width:100%">
+            <img src="assets/img/jpeg/85.jpg" style="width:100%">
+            <img src="assets/img/jpeg/28.jpg" style="width:100%">
+            <img src="assets/img/jpeg/29.jpg" style="width:100%">
+            <img src="assets/img/jpeg/57.jpg" style="width:100%">
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="w3-container w3-theme" style="padding:32px">
+        <p>All Rights Reserved (c) 2019 Matthew McCall</p>
+      </footer>
+
+    </div>
+
+    <script>
+      // Open and close the sidebar on medium and small screens
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      // Change style of top container on scroll
+      window.onscroll = function () { myFunction() };
+      function myFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+          document.getElementById("myIntro").classList.add("w3-show-inline-block");
+        } else {
+          document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+          document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+        }
+      }
+
+      // Accordions
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className += " w3-theme";
+        } else {
+          x.className = x.className.replace("w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(" w3-theme", "");
+        }
+      }
+    </script>
+
+  </body>
+
+</html>

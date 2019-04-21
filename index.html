@@ -1,32 +1,302 @@
-﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<title>mxtt-mmxix</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url("https://www.gstatic.com/prettyearth/assets/full/5038.jpg");
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-<body>
+    <title>Matthew McCall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif
+        }
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    mxtt-mmxix
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Down for Maintainance</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">Check back later for the new mxtt-mmxix.github.io</p>
-  </div>
-</div>
+        .w3-bar-block .w3-bar-item {
+            padding: 16px;
+            font-weight: bold;
+        }
+    </style>
 
-</body>
+    <body>
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+            <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close
+                <i class="fa fa-remove"></i></a>
+            <a class="w3-bar-item w3-button w3-black" href="index.html">About</a>
+            <a class="w3-bar-item w3-button" href="images.html">Images</a>
+            <a class="w3-bar-item w3-button" href="audio.html">Audio</a>
+            <a class="w3-bar-item w3-button" href="code.html">Code</a>
+            <div>
+                <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Contents <i class="fa fa-caret-down"></i></a>
+                <div id="demo" class="w3-hide">
+                    <a class="w3-bar-item w3-button" href="#s0">Skills</a>
+                    <a class="w3-bar-item w3-button" href="#s1">Other Abilites</a>
+                    <a class="w3-bar-item w3-button" href="#s2">Education</a>
+                    <a class="w3-bar-item w3-button" href="#s3">Awards</a>
+                </div>
+            </div>
+        </nav>
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+        </div>
+        <div class="w3-main" style="margin-left:250px;">
+            <div id="myTop" class="w3-container w3-top w3-theme w3-large">
+                <p><i class="fa fa-bars w3-button w3-black w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+                    <span id="myIntro" class="w3-hide">Matthew McCall</span></p>
+            </div>
+            <header class="w3-container w3-theme" style="padding:64px 32px">
+                <h1 class="w3-xxxlarge">Matthew McCall</h1>
+            </header>
+            <div class="w3-content w3-margin-top" style="max-width:1400px;">
+                <!-- The Grid -->
+                <div class="w3-row-padding">
+                    <!-- Left Column -->
+                    <div class="w3-third">
+                        <div class="w3-white w3-text-dark-grey w3-card-4">
+                            <div class="w3-display-container">
+                                <img src="assets/img/png/avatar.png" style="width:100%" alt="Avatar">
+                            </div>
+                            <div class="w3-container">
+                                <p>Honor roll high school student highly interested in aerospace engineering, and
+                                    software
+                                    development.</p>
+                                <hr>
+                                <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Bayside, New York</p>
+                                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>m-mccall@outlook.com
+                                </p>
+                                <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>+1(646)986-0530
+                                </p>
+                                <hr>
+                                <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue-grey"></i>Skills</b>
+                                </p>
+                                <p>Java</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:90%">
+                                        90%
+                                    </div>
+                                </div>
+                                <p>C#</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:80%">
+                                        <div class="w3-center w3-text-white">80%</div>
+                                    </div>
+                                </div>
+                                <p>Python</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:75%">
+                                        75%
+                                    </div>
+                                </div>
+                                <p>Web Development</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:50%">
+                                        50%
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue-grey"></i>Languages</b>
+                                </p>
+                                <p>English</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:100%"></div>
+                                </div>
+                                <p>Spanish</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:55%"></div>
+                                </div>
+                                <p>French</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:25%"></div>
+                                </div>
+                                <br>
+                            </div>
+                        </div><br>
+                        <!-- End Left Column -->
+                    </div>
+                    <!-- Right Column -->
+                    <div class="w3-twothird">
+                        <div id="s0" class="w3-container w3-card w3-white w3-margin-bottom">
+                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Skills
+                            </h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Microsoft .NET</b></h5>
+                                <p>Can create native applications using Microsoft .NET, or Universal Windows Platform,
+                                    using
+                                    C#.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Microsoft Azure</b></h5>
+                                <p>Capable of creating server-side web-based applications using Microsoft Azure in Java,
+                                    or
+                                    C#.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Web Development</b></h5>
+                                <p>Able to create websites, and client-side web-based applications using HTML, CSS, and
+                                    JavaScript. </p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Native App Development</b></h5>
+                                <p>Creating native, cross-platform applications using Java, and Python.</p><br>
+                            </div>
+                        </div>
+                        <div id="s1" class="w3-container w3-card w3-white w3-margin-bottom">
+                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Other
+                                Abilites</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>World Wide Web</b></h5>
+                                <p>Proficient in navigating the World Wide Web</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Microsoft Office</b></h5>
+                                <p>Proficient in using Microsoft Excel, PowerPoint, Publisher, Sway, and Word.</p><br>
+                            </div>
+                        </div>
+                        <div id="s2" class="w3-container w3-card w3-white w3-margin-bottom">
+                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Education
+                            </h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Marian Academy Catholic School</b></h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September
+                                    2008
+                                    - April 2017</h6>
+                                <p>Georgetown, Guyana</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Robert F. Kennedy Middle School (I.S. 250)</b></h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April
+                                    2017
+                                    -
+                                    June 2017 </h6>
+                                <p>Flushing, New York</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>The Magnet School of Global Studies and Leadership (P.S./M.S.
+                                        200)</b>
+                                </h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September
+                                    2017
+                                    - June 2018</h6>
+                                <p>Flushing, New York</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Benjamin N. Cardozo High School</b></h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September
+                                    2018
+                                    - June 2022</h6>
+                                <p>Bayside, New York</p><br>
+                            </div>
+                        </div>
+                        <div id="s3" class="w3-container w3-card w3-white w3-margin-bottom">
+                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Academics,
+                                Achievements, Awards</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Marian Academy Catholic School</b></h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Academic
+                                    Years
+                                    2013-2014, and 2014-2015</h6>
+                                <li>Outstanding Academic Performance Award</li>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Academic
+                                    Year
+                                    2015-2016 </h6>
+                                <p>Placed in the top 1% countrywide and 2nd in the school in the 2016 National. Grade
+                                    Six
+                                    Assessment.</p>
+                                <hr>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Academic
+                                    Year
+                                    2016-2017 </h6>
+                                <li>Won Annual Spelling Bee in December 2016.</li>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>The Magnet School of Global Studies and Leadership (P.S./M.S.
+                                        200)</b>
+                                </h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November
+                                    2017
+                                </h6>
+                                <li>Student of the Month Award</li>
+                                <hr>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June
+                                    2018
+                                </h6>
+                                <li>Science Achievement Award</li>
+                                <li>Perfect Attendance Award</li>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Benjamin N. Cardozo High School</b></h5>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall
+                                    Semester
+                                    2018 (September 2018 - December 2018)</h6>
+                                <li>Principal's Honor Roll</li>
+                                <li>Algebra Honors DaVinci</li>
+                                <li>Computer Science Essentials</li>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring
+                                    Semester
+                                    2019 (January 2019 - June 2019)</h6>
+                                <li>Algebra Honors DaVinci</li>
+                                <li>Computer Science Essentials</li>
+                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall
+                                    Semester
+                                    2019 (September 2019 - December 2019)</h6>
+                                <li>Computer Science Principals</li><br>
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                    </div>
+                    <!-- End Grid -->
+                </div>
+                <!-- End Page Container -->
+            </div>
+            <footer class="w3-container w3-theme" style="padding:32px">
+                <p>All Rights Reserved (c) 2019 Matthew McCall</p>
+            </footer>
+        </div>
+        <script>
+            // Open and close the sidebar on medium and small screens
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Change style of top container on scroll
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+                    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+                } else {
+                    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+                    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+                }
+            }
+
+            // Accordions
+            function myAccordion(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    x.previousElementSibling.className += " w3-theme";
+                } else {
+                    x.className = x.className.replace("w3-show", "");
+                    x.previousElementSibling.className =
+                        x.previousElementSibling.className.replace(" w3-theme", "");
+                }
+            }
+        </script>
+    </body>
+
 </html>

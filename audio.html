@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>Matthew McCall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 16px;
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+            <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close
+                <i class="fa fa-remove"></i></a>
+            <a class="w3-bar-item w3-button" href="index.html">About</a>
+            <a class="w3-bar-item w3-button" href="images.html">Images</a>
+            <a class="w3-bar-item w3-button w3-black" href="audio.html">Audio</a>
+            <a class="w3-bar-item w3-button" href="code.html">Code</a>
+        </nav>
+
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+        </div>
+
+        <div class="w3-main" style="margin-left:250px;">
+
+            <div id="myTop" class="w3-container w3-top w3-theme w3-large">
+                <p><i class="fa fa-bars w3-button w3-black w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+                    <span id="myIntro" class="w3-hide">Audio</span></p>
+            </div>
+
+            <header class="w3-container w3-theme" style="padding:64px 32px">
+                <h1 class="w3-xxxlarge">Audio</h1>
+            </header>
+
+            <div class="w3-container" style="padding:32px">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/570708303&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/562109418&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/562108647&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+
+            <footer class="w3-container w3-theme" style="padding:32px">
+                <p>All Rights Reserved (c) 2019 Matthew McCall</p>
+            </footer>
+
+        </div>
+
+
+    </body>
+
+</html>
