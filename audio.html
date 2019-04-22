@@ -21,12 +21,11 @@
     <body>
 
         <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
-            <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close
-                <i class="fa fa-remove"></i></a>
-            <a class="w3-bar-item w3-button" href="index.html">About</a>
-            <a class="w3-bar-item w3-button" href="images.html">Images</a>
-            <a class="w3-bar-item w3-button w3-black" href="audio.html">Audio</a>
-            <a class="w3-bar-item w3-button" href="code.html">Code</a>
+            <p><a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a></p>
+            <p><a class="w3-bar-item w3-button" href="index.html">About</a></p>
+            <p><a class="w3-bar-item w3-button" href="images.html">Images</a></p>
+            <p><a class="w3-bar-item w3-button w3-black" href="audio.html">Audio</a></p>
+            <p><a class="w3-bar-item w3-button" href="code.html">Code</a></p>
         </nav>
 
         <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
@@ -44,9 +43,39 @@
             </header>
 
             <div class="w3-container" style="padding:32px">
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/570708303&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/562109418&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/562108647&color=%23060606&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                <div class="w3-panel w3-card-4 w3-black">
+                    <h3>Korobeiniki [Remix]</h3>
+                    <audio controls="controls" style="width: 100%;">
+                        <source src="assets/m4a/Korobeiniki [Remix].m4a" type="audio/mpeg">
+                    </audio>
+                    <p><a href="assets/m4a/Korobeiniki [Remix].m4a">Korobeiniki [Remix].m4a</a></p>
+                </div>
+                <div class="w3-panel w3-card-4 w3-black">
+                    <h3>Redemption</h3>
+                    <audio controls="controls" style="width: 100%;">
+                        <source src="assets/m4a/Redemption.m4a" type="audio/mpeg">
+                    </audio>
+                    <p>May not render correctly in Safari.</p>
+                    <p><a href="assets/m4a/Redemption.m4a">Redemption.m4a</a></p>
+                </div>
+                <div class="w3-panel w3-card-4 w3-black">
+                    <h3>Subterrarian</h3>
+                    <audio controls="controls" style="width: 100%;">
+                        <source src="assets/m4a/Subterrarian.m4a" type="audio/mpeg">
+                    </audio>
+                    <p>May not render correctly in most browsers.</p>
+                    <p><a href="assets/m4a/Subterrarian.m4a">Subterrarian.m4a</a></p>
+                </div>
+                <div class="w3-panel w3-card-4 w3-black">
+                    <h3>Underground</h3>
+                    <audio controls="controls" style="width: 100%;">
+                        <source src="assets/m4a/Underground.m4a" type="audio/mpeg">
+                    </audio>
+                    <p>May not render correctly in Safari.</p>
+                    <p><a href="assets/m4a/Underground.m4a">Underground.m4a</a></p>
+                </div>
+
             </div>
 
             <footer class="w3-container w3-theme" style="padding:32px">
@@ -55,6 +84,43 @@
 
         </div>
 
+        <script>
+            // Open and close the sidebar on medium and small screens
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Change style of top container on scroll
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+                    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+                } else {
+                    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+                    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+                }
+            }
+
+            // Accordions
+            function myAccordion(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    x.previousElementSibling.className += " w3-theme";
+                } else {
+                    x.className = x.className.replace("w3-show", "");
+                    x.previousElementSibling.className =
+                        x.previousElementSibling.className.replace(" w3-theme", "");
+                }
+            }
+        </script>
 
     </body>
 
