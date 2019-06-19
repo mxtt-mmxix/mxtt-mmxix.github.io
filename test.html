@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <title>Matthew McCall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <body>
+        <div class="w3-metro-darken">
+            <div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-metro-darken w3-border-right" style=" width:200px; z-index: 2;" id="Sidebar">
+                <button class="w3-bar-item w3-button w3-large w3-hide-large w3-metro-red" onclick="w3_close()">Close &times;</button>
+                <a href="#mm" class="w3-bar-item w3-button">Matthew McCall</a>
+                <a href="#skills" class="w3-bar-item w3-button">Skills</a>
+                <a href="#education" class="w3-bar-item w3-button">Education</a>
+                <a href="#aaa" class="w3-bar-item w3-button">Academics, Awards</a>
+            </div>
+            <div id="w3-main" class="w3-main" style="margin-left:200px">
+                <div class="w3-metro-dark-blue w3-cell-row w3-bar w3-border-bottom" style="position: fixed; z-index: 1">
+                    <div class="w3-cell w3-cell-middle">
+                        <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+                    </div>
+                    <header class="w3-container w3-cell">
+                        <h2>Matthew McCall</h2>
+                    </header>
+                </div>
+                <br id="mm">
+                <br>
+                <div class="content w3-center w3-border-bottom w3-padding-64">
+                    <h3>I am</h3>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A Java Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">An iOS Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">An iPadOS Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A macOS Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A Web Developer</h2>
+                    </div>
+                </div>
+                <div id="skills" class="w3-container w3-border-bottom w3-padding-16">
+                    <h2>Skills</h2>
+                    <h4>iOS, iPadOS, and macOS Development</h4>
+                    <p>Able to create applications for various Apple platforms using Swift.</p>
+                    <br>
+                    <h4>Java Development</h4>
+                    <p>Capable of creating native, cross-platform applications using Java.</p>
+                    <br>
+                    <h4>Front-End Web Development</h4>
+                    <p>Able to create websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div id="education" class="w3-container w3-border-bottom w3-padding-16">
+                    <h2>Education</h2>
+                    <h4>Marian Academy Catholic School</h4>
+                    <p>September 2008 - April 2017</p>
+                    <br>
+                    <h4>Robert F.Kennedy Middle School (I.S. 250)</h4>
+                    <p>April 2017 - June 2017</p>
+                    <br>
+                    <h4>The Magnet School of Global Studies and Leadership (P.S./M.S. 200)</h4>
+                    <p>September 2017 - June 2018</p>
+                    <br>
+                    <h4>Benjamin N. Cardozo High School</h4>
+                    <p>September 2018 -June 2022</p>
+                </div>
+                <div id="aaa" class="w3-container w3-border-bottom w3-padding-16">
+                    <h2>Academics, Achievements, and Awards</h2>
+                    <h4>Marian Academy Catholic School</h4>
+                    <h6>Academic Years 2013-2014, and 2014-2015</h6>
+                    <ul>
+                        <li>Outstanding Academic Performance Award</li>
+                    </ul>
+                    <br>
+                    <h4>Robert F.Kennedy Middle School (I.S. 250)</h4>
+                    <h6>Academic Years 2016-2017</h6>
+                    <ul>
+                        <li>Won Annual Spelling Bee in December 2016.</li>
+                    </ul>
+                    <br>
+                    <h4>The Magnet School of Global Studies and Leadership (P.S./M.S. 200)</h4>
+                    <h6>November 2017</h6>
+                    <ul>
+                        <li>Student of the Month Award.</li>
+                    </ul>
+                    <h6>June 2017</h6>
+                    <ul>
+                        <li>Science Achievement Award.</li>
+                        <li>Perfect Attendance Award.</li>
+                    </ul>
+                    <br>
+                    <h4>Benjamin N. Cardozo High School</h4>
+                    <h6>Fall Semester 2018 (September 2018 - December 2018)</h6>
+                    <ul>
+                        <li>Principal's Honors Roll.</li>
+                        <li>Algebra Honors DaVinci.</li>
+                        <li>Computer Science Essentials</li>
+                    </ul>
+                    <h6>Spring Semester 2019 (January 2019 - June 2019)</h6>
+                    <ul>
+                        <li>Algebra Honors DaVinci.</li>
+                        <li>Computer Science Essentials</li>
+                    </ul>
+                    <h6>Fall Semester 2019 (September 2019 - December 2019)</h6>
+                    <ul>
+                        <li>Advanced Placement Computer Science Principals</li>
+                        <li>Advanced Placement European History</li>
+                        <li>Geometry Honors DaVinci.</li>
+                    </ul>
+                    <h6>Spring Semester 2020 (January 2020 - June 2020)</h6>
+                    <ul>
+                        <li>Advanced Placement Computer Science Principals</li>
+                        <li>Advanced Placement European History</li>
+                        <li>Geometry Honors DaVinci.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            function w3_open() {
+                document.getElementById("Sidebar").style.width = "100%";
+                document.getElementById("Sidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("Sidebar").style.width = "200px";
+                document.getElementById("Sidebar").style.display = "none";
+            }
+
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                x[slideIndex - 1].style.zIndex = "0";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+    </body>
+
+</html>
