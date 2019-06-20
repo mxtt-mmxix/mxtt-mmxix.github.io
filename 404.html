@@ -1,108 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Matthew McCall</title>
-        <style>
-            ::-moz-selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
+    <body class="w3-metro-darken">
 
-            ::selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
+        <div class="w3-metro-dark-blue w3-cell-row w3-bar w3-border-bottom">
+            <header class="w3-container w3-cell">
+                <h2>Matthew McCall</h2>
+            </header>
+        </div>
 
-            html {
-                padding: 30px 10px;
-                font-size: 20px;
-                line-height: 1.4;
-                color: #737373;
-                background: #0001AB;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-            }
-
-            body {
-                max-width: 800px;
-                _width: 800px;
-                padding: 30px 20px 50px;
-                border-radius: 4px;
-                margin: 0 auto;
-                background: #0001AB;
-                font-family: Lucida, monospace;
-            }
-
-            h1 {
-                margin: 0 10px;
-                font-size: 18px;
-                text-align: center;
-                background-color: #FFF;
-                color: #0001AB;
-            }
-
-            h1 span {
-                color: #bbb;
-            }
-
-            p {
-                font-size: 18px;
-                margin: 1em 0;
-                color: #FFF;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 18px;
-                margin: 1em 0;
-                color: #FFF;
-                text-decoration: underline;
-            }
-
-            ul {
-                padding: 0 0 0 40px;
-                margin: 1em 0;
-                color: #FFF;
-            }
-
-            .container {
-                max-width: 800px;
-                _width: 800px;
-                margin: 0 auto;
-            }
-        </style>
-    </head>
-
-    <body onload="myFunction()">
-        <script>
-            function myFunction() {
-                var d = new Date();
-                var n = d.getTime();
-                document.getElementById("time").innerHTML = n;
-            }
-        </script>
-
-        <audio id="error" autoplay>
-            <source src="assets/wav/error.wav" type="audio/wav">
-            <source src="assets/m4a/error.m4a" type="audio/mpeg">
-
-        </audio>
-
-        <div class="container">
-            <h1 style="margin: 0 auto; max-width: 500px;">404 - Page not found</h1>
-            <p>*** STOP: HTTP 404.0 (404) PAGE_NOT_FOUND ***</p>
-            <p>*** Address http://mxtt-mmxix.github.io, POSIX TIME <span id="time">0000000000</span></p>
-            <ul>
-                <li> Today probally isn't your lucky day. </li>
-                <li> Something went wrong on our end. </li>
-                <li> Dooms day is here, servers are dying.</li>
-                <li> You misspelled the url. </li>
-                <li> You followed an old, dead, or broken link to the past.</li>
-                <li> Or you intentionally navigated to this page for fun. </li>
-            </ul>
-            <p>Try clicking <span><a href="index.html">here</a></span>.</p>
+        <div class="w3-center w3-padding-16">
+            <h1>404, Page Not Found</h1>
+            <p>It appears, the page you are looking for is missing. Try returning to the main site <a href="index.html">here</a>.</p>
         </div>
     </body>
 

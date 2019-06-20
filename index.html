@@ -3,250 +3,277 @@
     <title>Matthew McCall</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            font-family: "Roboto", sans-serif
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-        .w3-bar-block .w3-bar-item {
-            padding: 16px;
-            font-weight: bold;
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <style>
+        .w3-row-padding img {
+            margin-bottom: 16px;
         }
     </style>
 
     <body>
-        <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
-            <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
-            <a class="w3-bar-item w3-button w3-black" href="index.html">About</a>
-            <a class="w3-bar-item w3-button" href="audio.html">Audio</a>
-            <a class="w3-bar-item w3-button" href="code.html">Code</a>
-            <a class="w3-bar-item w3-button" href="images.html">Images</a>
-            <a class="w3-bar-item w3-button" href="work.html">Work</a>
-            <div>
-                <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Contents <i class="fa fa-caret-down"></i></a>
-                <div id="demo" class="w3-hide">
-                    <a class="w3-bar-item w3-button" href="#s0">Skills</a>
-                    <a class="w3-bar-item w3-button" href="#s1">Other Abilites</a>
-                    <a class="w3-bar-item w3-button" href="#s2">Education</a>
-                    <a class="w3-bar-item w3-button" href="#s3">Awards</a>
-                </div>
+        <div class="w3-metro-darken">
+            <div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-metro-darken w3-border-right" style=" width:200px; z-index: 2;" id="Sidebar">
+                <button class="w3-bar-item w3-button w3-large w3-hide-large w3-metro-red" onclick="w3_close()">Close &times;</button>
+                <a href="#mm" class="w3-bar-item w3-button">Matthew McCall</a>
+                <a href="#music" class="w3-bar-item w3-button">Music</a>
+                <a href="#images" class="w3-bar-item w3-button">Gallery</a>
             </div>
-        </nav>
-        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
-        </div>
-        <div class="w3-main" style="margin-left:250px;">
-            <div id="myTop" class="w3-container w3-top w3-theme w3-large">
-                <p><i class="fa fa-bars w3-button w3-black w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-                    <span id="myIntro" class="w3-hide">Matthew McCall</span></p>
-            </div>
-            <header class="w3-container w3-theme" style="padding:64px 32px">
-                <h1 class="w3-xxxlarge">Matthew McCall</h1>
-            </header>
-            <div class="w3-content w3-margin-top" style="max-width:1400px;">
-                <!-- The Grid -->
-                <div class="w3-row-padding">
-                    <!-- Left Column -->
-                    <div class="w3-third">
-                        <div class="w3-white w3-text-dark-grey w3-card-4">
-                            <div class="w3-display-container">
-                                <img src="assets/img/png/avatar.png" style="width:100%" alt="Avatar">
-                            </div>
-                            <div class="w3-container">
-                                <p>Honor roll high school student highly interested in aerospace engineering, and software development.</p>
-                                <hr>
-                                <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Bayside, New York</p>
-                                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>m-mccall@outlook.com </p>
-                                <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>+1(646)986-0530 </p>
-                                <hr>
-                                <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue-grey"></i>Skills</b>
-                                </p>
-                                <p>Java</p>
-                                <div class="w3-light-grey w3-round-xlarge w3-small">
-                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:90%"> 90% </div>
-                                </div>
-                                <p>C#</p>
-                                <div class="w3-light-grey w3-round-xlarge w3-small">
-                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:80%">
-                                        <div class="w3-center w3-text-white">80%</div>
-                                    </div>
-                                </div>
-                                <p>Python</p>
-                                <div class="w3-light-grey w3-round-xlarge w3-small">
-                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:75%"> 75% </div>
-                                </div>
-                                <p>Web Development</p>
-                                <div class="w3-light-grey w3-round-xlarge w3-small">
-                                    <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:50%"> 50% </div>
-                                </div>
-                                <hr>
-                                <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue-grey"></i>Languages</b>
-                                </p>
-                                <p>English</p>
-                                <div class="w3-light-grey w3-round-xlarge">
-                                    <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:100%"></div>
-                                </div>
-                                <p>Spanish</p>
-                                <div class="w3-light-grey w3-round-xlarge">
-                                    <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:55%"></div>
-                                </div>
-                                <p>French</p>
-                                <div class="w3-light-grey w3-round-xlarge">
-                                    <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:25%"></div>
-                                </div>
-                                <br>
-                            </div>
-                        </div><br>
-                        <!-- End Left Column -->
+            <div id="w3-main" class="w3-main" style="margin-left:200px">
+                <div class="w3-metro-dark-blue w3-cell-row w3-bar w3-border-bottom" style="position: fixed; z-index: 1">
+                    <div class="w3-cell w3-cell-middle">
+                        <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
                     </div>
-                    <!-- Right Column -->
-                    <div class="w3-twothird">
-                        <div id="s0" class="w3-container w3-card w3-white w3-margin-bottom">
-                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Skills </h2>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Microsoft .NET</b></h5>
-                                <p>Can create native applications using Microsoft .NET, or Universal Windows Platform, using C#.</p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Microsoft Azure</b></h5>
-                                <p>Capable of creating server-side web-based applications using Microsoft Azure in Java, or C#.</p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Web Development</b></h5>
-                                <p>Able to create websites, and client-side web-based applications using HTML, CSS, and JavaScript. </p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Native App Development</b></h5>
-                                <p>Creating native, cross-platform applications using Java, and Python.</p><br>
-                            </div>
-                        </div>
-                        <div id="s1" class="w3-container w3-card w3-white w3-margin-bottom">
-                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Other Abilites</h2>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>World Wide Web</b></h5>
-                                <p>Proficient in navigating the World Wide Web</p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Microsoft Office</b></h5>
-                                <p>Proficient in using Microsoft Excel, PowerPoint, Publisher, Sway, and Word.</p><br>
-                            </div>
-                        </div>
-                        <div id="s2" class="w3-container w3-card w3-white w3-margin-bottom">
-                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Education </h2>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Marian Academy Catholic School</b></h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2008 - April 2017</h6>
-                                <p>Georgetown, Guyana</p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Robert F. Kennedy Middle School (I.S. 250)</b></h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2017 - June 2017 </h6>
-                                <p>Flushing, New York</p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>The Magnet School of Global Studies and Leadership (P.S./M.S. 200)</b>
-                                </h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2017 - June 2018</h6>
-                                <p>Flushing, New York</p>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Benjamin N. Cardozo High School</b></h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2018 - June 2022</h6>
-                                <p>Bayside, New York</p><br>
-                            </div>
-                        </div>
-                        <div id="s3" class="w3-container w3-card w3-white w3-margin-bottom">
-                            <h2 class="w3-text-blue-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Academics, Achievements, Awards</h2>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Marian Academy Catholic School</b></h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Academic Years 2013-2014, and 2014-2015</h6>
-                                <li>Outstanding Academic Performance Award</li>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Academic Year 2015-2016 </h6>
-                                <p>Placed in the top 1% countrywide and 2nd in the school in the 2016 National. Grade Six Assessment.</p>
-                                <hr>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Academic Year 2016-2017 </h6>
-                                <li>Won Annual Spelling Bee in December 2016.</li>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>The Magnet School of Global Studies and Leadership (P.S./M.S. 200)</b>
-                                </h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2017 </h6>
-                                <li>Student of the Month Award</li>
-                                <hr>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2018 </h6>
-                                <li>Science Achievement Award</li>
-                                <li>Perfect Attendance Award</li>
-                                <hr>
-                            </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Benjamin N. Cardozo High School</b></h5>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall Semester 2018 (September 2018 - December 2018)</h6>
-                                <li>Principal's Honor Roll</li>
-                                <li>Algebra Honors DaVinci</li>
-                                <li>Computer Science Essentials</li>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring Semester 2019 (January 2019 - June 2019)</h6>
-                                <li>Algebra Honors DaVinci</li>
-                                <li>Computer Science Essentials</li>
-                                <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall Semester 2019 (September 2019 - December 2019)</h6>
-                                <li>Computer Science Principals</li><br>
-                            </div>
-                        </div>
-                        <!-- End Right Column -->
-                    </div>
-                    <!-- End Grid -->
+                    <header class="w3-container w3-cell">
+                        <h2>Matthew McCall</h2>
+                    </header>
                 </div>
-                <!-- End Page Container -->
+                <br id="mm">
+                <br>
+                <div class="content w3-center w3-border-bottom w3-padding-64">
+                    <h3>I am</h3>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A Java Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">An iOS Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">An iPadOS Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A macOS Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A Web Developer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">A Photographer</h2>
+                    </div>
+                    <div class="slide w3-animate-right">
+                        <h2 class="w3-jumbo">My Brother's Keeper</h2>
+                    </div>
+                </div>
+                <div class="w3-border-bottom w3-padding-16">
+                    <div class="w3-row">
+                        <div class="w3-cell w3-half w3-border-right w3-container">
+                            <img width="100%" src="assets/img/jpeg/avatar.jpg">
+                        </div>
+                        <div class="w3-rest w3-container">
+                            <p>m-mccall@outlook.com</p>
+                            <p>+1(646)986-0530</p>
+                            <hr>
+                            <ul class="w3-ul w3-light-gray">
+                                <li>
+                                    <h3>Java Projects</h3>
+                                </li>
+                                <li><a href="https://github.com/mxtt-mmxix/Chat-Bot">Chat-Bot</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/Project-FPS">Project-FPS</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/inDevBrowser">inDevBrowser</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/Project-Unknown">Project-Unknown</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/menapheno">menapheno</a></li>
+                            </ul>
+                            <br>
+                            <ul class="w3-ul w3-light-gray">
+                                <li>
+                                    <h3>Small Basic Projects</h3>
+                                </li>
+                                <li><a href="https://github.com/mxtt-mmxix/Tron">Tetris</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/indevOS">indevOS</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/DVD-Screensaver">DVD-Screensaver</a></li>
+                                <li><a href="https://github.com/mxtt-mmxix/Dave">Dave</a></li>
+                            </ul>
+                            <hr>
+                            <a href="https://stackoverflow.com/users/11495374/mxtt-mmxix"><img src="https://stackoverflow.com/users/flair/11495374.png?theme=dark" width="208" height="58" alt="profile for mxtt mmxix at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for mxtt mmxix at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="music" class="w3-container w3-border-bottom">
+                    <h1>Music</h1>
+                    <iframe style="padding-bottom: 16px;" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/293212990&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+                <div id="images" class="w3-border-bottom">
+                    <div class="w3-container">
+                        <h1>Gallery</h1>
+                    </div>
+                    <div class="w3-row-padding" id="myGrid">
+                        <div class="w3-third">
+                            <img src="assets/img/jpeg/1.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/2.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/3.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/6.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/9.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/30.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/64.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/34.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/13.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/14.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/15.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/16.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/17.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/18.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/19.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/20.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/21.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/22.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/23.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/24.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/25.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/26.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/27.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/86.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/54.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/52.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/50.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/62.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/58.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/56.jpg" style="width:100%">
+                        </div>
+                        <div class="w3-third">
+                            <img src="assets/img/jpeg/4.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/5.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/8.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/10.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/11.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/32.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/63.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/35.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/36.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/37.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/38.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/39.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/40.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/41.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/42.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/43.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/44.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/45.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/46.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/47.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/48.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/49.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/51.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/53.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/87.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/55.jpg" style="width:100%">
+                        </div>
+                        <div class="w3-third">
+                            <img src="assets/img/jpeg/59.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/60.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/61.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/7.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/12.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/31.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/33.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/65.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/66.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/67.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/68.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/69.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/70.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/71.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/72.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/73.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/74.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/75.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/76.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/77.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/78.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/79.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/80.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/81.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/82.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/83.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/84.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/85.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/28.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/29.jpg" style="width:100%">
+                            <img src="assets/img/jpeg/57.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+                <footer class="w3-container" style="padding:32px">
+                    <p>All Rights Reserved (c) 2019 Matthew McCall</p>
+                </footer>
             </div>
-            <footer class="w3-container w3-theme" style="padding:32px">
-                <p>All Rights Reserved (c) 2019 Matthew McCall</p>
-            </footer>
         </div>
         <script>
-            // Open and close the sidebar on medium and small screens
             function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
+                document.getElementById("Sidebar").style.width = "100%";
+                document.getElementById("Sidebar").style.display = "block";
             }
 
             function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
+                document.getElementById("Sidebar").style.width = "200px";
+                document.getElementById("Sidebar").style.display = "none";
             }
 
-            // Change style of top container on scroll
-            window.onscroll = function () { myFunction() };
-            function myFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
-                    document.getElementById("myIntro").classList.add("w3-show-inline-block");
-                } else {
-                    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-                    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
-                }
-            }
-
-            // Accordions
-            function myAccordion(id) {
-                var x = document.getElementById(id);
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
                 if (x.className.indexOf("w3-show") == -1) {
                     x.className += " w3-show";
-                    x.previousElementSibling.className += " w3-theme";
+                    x.previousElementSibling.className += " w3-metro-blue";
                 } else {
-                    x.className = x.className.replace("w3-show", "");
-                    x.previousElementSibling.className =
-                        x.previousElementSibling.className.replace(" w3-theme", "");
+                    x.className = x.className.replace(" w3-show", "");
+                    x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-metro-blue", "");
                 }
+            }
+
+            function myDropFunc() {
+                var x = document.getElementById("demoDrop");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    x.previousElementSibling.className += " w3-metro-blue";
+                } else {
+                    x.className = x.className.replace(" w3-metro-blue", "");
+                    x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-metro-blue", "");
+                }
+            }
+
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                x[slideIndex - 1].style.zIndex = "0";
+                setTimeout(carousel, 3000);
             }
         </script>
     </body>
