@@ -37,6 +37,20 @@
         .w3-row-padding img {
             margin-bottom: 16px;
         }
+
+        /* The progress container (grey background) */
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: #ccc;
+        }
+
+        /* The progress bar (scroll indicator) */
+        .progress-bar {
+            height: 8px;
+            background: rgb(46, 139, 233);
+            width: 0%;
+        }
     </style>
 
     <body>
@@ -48,13 +62,18 @@
                 <a href="#images" class="w3-bar-item w3-button">Gallery</a>
             </div>
             <div id="w3-main" class="w3-main" style="margin-left:200px">
-                <div class="w3-metro-dark-blue w3-cell-row w3-bar w3-border-bottom" style="position: fixed; z-index: 1">
-                    <div class="w3-cell w3-cell-middle">
-                        <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+                <div class="w3-metro-dark-blue w3-cell-row" style="position: fixed; z-index: 1;">
+                    <div>
+                        <div class="w3-cell w3-cell-middle">
+                            <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+                        </div>
+                        <header class="w3-container w3-cell">
+                            <h2>Matthew McCall</h2>
+                        </header>
                     </div>
-                    <header class="w3-container w3-cell">
-                        <h2>Matthew McCall</h2>
-                    </header>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="myBar"></div>
+                    </div>
                 </div>
                 <br id="mm">
                 <br>
@@ -274,6 +293,15 @@
                 x[slideIndex - 1].style.display = "block";
                 x[slideIndex - 1].style.zIndex = "0";
                 setTimeout(carousel, 3000);
+            }
+
+            window.onscroll = function () { progressBar() };
+
+            function progressBar() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
             }
         </script>
     </body>
