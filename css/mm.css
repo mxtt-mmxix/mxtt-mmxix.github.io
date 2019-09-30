@@ -1,0 +1,39 @@
+body,
+html {
+    height: 100%;
+}
+
+.mm-parallax {
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+
+
+    opacity: 0.80;
+}
+
+.mm-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.mm-caption span.border {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding: 32px;
+    font-size: 3.5vw;
+    letter-spacing: 10px;
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
