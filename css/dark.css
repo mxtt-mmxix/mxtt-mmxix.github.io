@@ -22,3 +22,7 @@
 .w3-hover-border-theme:hover {border-color:#333333 !important}
 
 .mm-caption span.border {background-color: black; color: white; mix-blend-mode: multiply;}
+
+.progress-container {
+    background: white;
+}
