@@ -50,3 +50,9 @@ html {
     letter-spacing: 10px;
     mix-blend-mode: screen; /* This makes the cutout text possible */
 }
+
+@media only screen and (max-device-width: 601px) {
+  .mm-parallax {
+    background-attachment: scroll;
+  }
+}
