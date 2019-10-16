@@ -13,37 +13,80 @@
     <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="Sidebar">
         <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="material-icons">close</i></a>
         <a class="w3-bar-item w3-button" href="index.html">Welcome</a>
-        <a class="w3-bar-item w3-button w3-theme" href="BriefConceptOfComputerCoding.html">Concept</a>
+        <a class="w3-bar-item w3-button" href="BriefConceptOfComputerCoding.html">Concept</a>
         <a class="w3-bar-item w3-button" href="CreatingAJavaFile.html">Naming Files</a>
-        <a class="w3-bar-item w3-button" href="Variables.html">Variables</a>
+        <a class="w3-bar-item w3-button w3-theme" href="Variables.html">Variables</a>
         <a class="w3-bar-item w3-button" href="#">Operators</a>
     </nav>
 
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay"></div>
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay">
+    </div>
 
     <div class="w3-main" style="margin-left:250px;">
 
         <div id="Top" class="w3-container w3-top w3-theme w3-large">
             <p><i class="material-icons w3-button w3-theme w3-hide-large w3-xlarge" style="top: 0px;" onclick="w3_open()">menu</i>
-                <span id="Intro" class="w3-hide">A Brief Concept of Computer Coding</span></p>
+                <span id="Intro" class="w3-hide">Variables</span></p>
         </div>
 
         <header class="w3-container w3-theme" style="padding:64px 32px">
-            <h1 class="w3-xxxlarge">A Brief Concept of Computer Coding</h1>
+            <h1 class="w3-xxxlarge">Variables</h1>
         </header>
 
         <div class="w3-row">
             <div class="w3-threequarter">
                 <div class="w3-container" style="padding:32px">
 
-                    <h2>A Brief Concept of Computer Coding</h2>
-                    <p>Before we start learning about how to write code, we’ll need to first understand how coding works and how programmers make use of their code. There are different forms of code. And the lowest is: Machine Code, and this is code in which only the computer understands where we humans do not understand. And then there’s High Level Code that are code that we can understand that take form as programming languages like Java. Which we will be using in the near future.</p>
+                    <h2>Variables</h2>
+                    <p>Variables - (noun) An element, feature, or factor that is liable to vary or change and in computer code, variables are used for storing data in which its value may be changed.</p>
+
+                    <p>Variables can hold any data type, so we must know what they are. The data types that all programmers should know are the primitive data types, which as the name implies, these data types are the most simplest.</p>
+
+                    <p>The primitive data are:</p>
+                    <ul>
+                        <li>int - This data type can only store data values that are negative or positive integers and nothing else.</li>
+                        <li>double - This data type can only store data values that are real numbers. (Floats do exist in Java however are depreceated.)</li>
+                        <li>boolean - This data type may only have two values: true or false</li>
+                    </ul>
+
                     <br>
-                    <h3>To explain</h3>
-                    <p>Computers and humans have different programming languages we understand to make technology work. Thus we need a way to communicate our code to computer code to make the computer do what we want. And the method to do so is, we have something called a compiler in which our code is transformed into code that the computer understands.</p>
+
+                    <div class="w3-panel w3-pale-yellow w3-border-yellow w3-border w3-leftbar">
+                        <p>What happens when you try to store data that does not match the data type of the variable?</p>
+                        <p>When we assign a variable its type, the memory allocated is specialized for that type only, so if you try to assign a value whose type is different, the JVM will through a 'type mismatch' error. Think about it this way, if someone told you to drill a 5 mm hole for a screw, you drill the hole, but they gave you a 10 mm screw. It wont fit.</p>
+                    </div>
+
                     <br>
-                    <h3>To make an analogy</h3>
-                    <p>We programmers who code in java will be like Person A who only speaks English. While the computer that only understand machine code will be like Person B who only Chinese or Spanish. Now in this scenario, Person A needs Person B to do a certain task, but Person A can’t communicate with Person B of the task that Person B needs to do. Thus a translator needs to translate information from Person A to Person B and every time person A needs Person B to do something, a translator is needed. This is the same concept with us programmers compiling our code with each new code as to translate the code we can utilize into machine code that the computer will understand.</p>
+
+                    <h2>Initializing, Declaring, and Assigning Variables</h2>
+
+                    <p>To declare a variable, you must follow this format. <br> <i>Type</i> name = <i>initial value (if any)</i>;</p>
+
+                    <br>
+
+                    <div class="w3-panel w3-card w3-theme">
+                        <h4>Example of initializing variables..</h4>
+                        <div class="w3-code javaHigh notranslate w3-theme-dark">
+                            public class nameOfYourFile { <br>
+                            &emsp;public static void main(String[] args) { <br>
+                            &emsp;&emsp;int meaningOfLife = 42; <br>
+                            &emsp;} <br>
+                            } <br>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <p>Rules when naming a variable:</p>
+
+                    <ul>
+                        <li>Variable names should only consist of alphanumeric characters. (Some exceptions apply)</li>
+                        <li>Variable names must start with a letter.</li>
+                        <li>Variable names should be consistent.</li>
+                    </ul>
+
+                    <p>Please note, different variables types have different formatting. For example, regular variables should be named similar to <i>variableName</i>, whereas final variables should be named similar to <i>VARIABLE_NAME</i>.</p>
+
                 </div>
             </div>
             <div class="w3-quarter">
@@ -52,6 +95,7 @@
                 </div>
             </div>
         </div>
+
         <footer class="w3-container w3-theme" style="padding:32px">
             <p>Copyright BNCHS Sentinels <br> Matthew McCall &copy; 2019. All Rights Reserved.</p>
         </footer>
@@ -59,9 +103,6 @@
     </div>
 
     <script>
-
-        document.onload = function () { checkConnectivity() }
-
         // Open and close the sidebar on medium and small screens
         function w3_open() {
             document.getElementById("Sidebar").style.display = "block";
