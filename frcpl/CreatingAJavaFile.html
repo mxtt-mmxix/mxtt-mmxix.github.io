@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>FRC Java</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/color.css">
+<link rel="stylesheet" href="css/font/css/ibm-plex.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;"
+        id="Sidebar">
+        <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i
+                class="material-icons">close</i></a>
+        <a class="w3-bar-item w3-button" href="index.html">Welcome</a>
+        <a class="w3-bar-item w3-button" href="BriefConceptOfComputerCoding.html">Concept</a>
+        <a class="w3-bar-item w3-button w3-theme" href="CreatingAJavaFile.html">Naming Files</a>
+        <a class="w3-bar-item w3-button" href="">Logging</a>
+        <div>
+            <a class="w3-bar-item w3-button" onclick="Accordion('demo')" href="javascript:void(0)">Data Types <i
+                    class="material-icons">arrow_drop_down</i></a>
+            <div id="demo" class="w3-hide">
+                <a class="w3-bar-item w3-button" href="integers.html">Integers</a>
+                <a class="w3-bar-item w3-button" href="#">Doubles</a>
+                <a class="w3-bar-item w3-button" href="#">Strings</a>
+                <a class="w3-bar-item w3-button" href="#">Booleans</a>
+            </div>
+        </div>
+        <a class="w3-bar-item w3-button" href="#">Operations</a>
+        <a class="w3-bar-item w3-button" href="#">Conditionals</a>
+        <a class="w3-bar-item w3-button" href="#">Objects</a>
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay">
+    </div>
+
+    <div class="w3-main" style="margin-left:250px;">
+
+        <div id="Top" class="w3-container w3-top w3-theme w3-large">
+            <p><i class="material-icons w3-button w3-theme w3-hide-large w3-xlarge" style="top: 0px;"
+                    onclick="w3_open()">menu</i>
+                <span id="Intro" class="w3-hide">Rules When Creating A File</span></p>
+        </div>
+
+        <header class="w3-container w3-theme" style="padding:64px 32px">
+            <h1 class="w3-xxxlarge">Rules When Creating A Files</h1>
+        </header>
+
+        <div class="w3-row">
+            <div class="w3-threequarter">
+                <div class="w3-container" style="padding:32px">
+
+                    <h2>Naming Files and Classes</h2>
+                    <p>The following conditions must be met when naming a Java file and declaring a class. Otherwise the
+                        Java Virtual Machine (JVM) will complain.</p>
+
+                    <p>The name of your class file must be one word altogether as there may be no spaces. It is
+                        encouraged you use "camel casing". For example: "ThisIsAnExample".</p>
+
+                    <div class="w3-panel w3-pale-yellow w3-border-yellow w3-border w3-leftbar">
+                        <p>Please note that using underscores or hyphens in a manner similar to "This_is_an_example" or
+                            "This-is-an-example" is allowed, but discouraged.</p>
+                    </div>
+
+                    <p>When saving your file, save it with the extension name “.java”. This indicates Windows to treat
+                        this file differently
+                        from your average text file.</p>
+
+                    <div class="w3-panel w3-pale-yellow w3-border-yellow w3-border w3-leftbar">
+                        <p>Please note this is not necessary for Unix-like systems such as macOS or Linux, because these
+                            systems are far
+                            superior to Windows and do not require the user to spell out the file type for them.</p>
+                    </div>
+
+                    <div class="w3-panel w3-card w3-theme">
+                        <h4>Example of how to declare a Java a main class.</h4>
+                        <div class="w3-code javaHigh notranslate w3-theme-dark">
+                            public class nameOfYourFile { <br>
+                            &emsp;public static void main(String[] args) { <br>
+                            &emsp;&emsp;//Your code here. <br>
+                            &emsp;} <br>
+                            } <br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-container w3-padding-48">
+                    <img src="assets/img/Logo_Transparent_760x760.png" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <footer class="w3-container w3-theme" style="padding:32px">
+            <p>Copyright BNCHS Sentinels <br> Matthew McCall &copy; 2019. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Open and close the sidebar on medium and small screens
+        function w3_open() {
+            document.getElementById("Sidebar").style.display = "block";
+            document.getElementById("Overlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("Sidebar").style.display = "none";
+            document.getElementById("Overlay").style.display = "none";
+        }
+
+        // Change style of top container on scroll
+        window.onscroll = function () { Function() };
+        function Function() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("Top").classList.add("w3-card-4", "w3-animate-opacity");
+                document.getElementById("Intro").classList.add("w3-show-inline-block");
+            } else {
+                document.getElementById("Intro").classList.remove("w3-show-inline-block");
+                document.getElementById("Top").classList.remove("w3-card-4", "w3-animate-opacity");
+            }
+        }
+
+        // Accordions
+        function Accordion(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme";
+            } else {
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-theme", "");
+            }
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        w3CodeColor();
+    </script>
+
+</body>
+
+</html>
