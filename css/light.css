@@ -18,5 +18,5 @@
 .w3-border-theme {border-color:#ffffff !important}
 
 .w3-hover-theme:hover {color:#fff !important; background-color:#000 !important}
-.w3-hover-text-theme:hover {color:#ffffff !important}
-.w3-hover-border-theme:hover {border-color:#ffffff !important}
+.w3-hover-text-theme:hover {color:#000 !important}
+.w3-hover-border-theme:hover {border-color:#000 !important}
