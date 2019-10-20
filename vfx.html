@@ -34,7 +34,7 @@
         }
 
         .mm-pllx {
-            background-image: url("assets/images/RoyalOntarioMuseum.jpg");
+            background-image: url("https://media.giphy.com/media/MEAhJFnAsHAvr0WEad/giphy.gif");
         }
 
         .mm-pllx-0 {
@@ -62,18 +62,10 @@
 <body>
 
     <div class="w3-top">
-        <div class="w3-bar w3-theme">
-            <a class="w3-bar-item w3-button w3-border-theme w3-topbar w3-hover-border-theme w3-hover-none w3-hover-text-theme"
-                href="index.html">Matthew McCall</a>
-            <a class="w3-bar-item w3-button w3-border-theme w3-topbar w3-hover-border-theme w3-hover-none w3-hover-text-theme"
-                href="vfx.html">VFX</a>
-            <a class="w3-bar-item w3-button w3-border-theme w3-topbar w3-hover-border-theme w3-hover-none w3-hover-text-theme"
-                href="frcpl/index.html">FRC</a>
-            <div class="w3-right">
-                <button onclick="swapTheme()" class="w3-bar-item w3-button w3-hover-theme">
-                    <i class="material-icons">settings_brightness</i>
-                </button>
-            </div>
+        <div class="w3-bar mm-overlay-light">
+            <a class="w3-bar-item w3-button" href="index.html">Matthew McCall</a>
+            <a class="w3-bar-item w3-button" href="vfx.html">VFX</a>
+            <a class="w3-bar-item w3-button" href="frcpl/index.html">FRC</a>
         </div>
         <div class="progress-container">
             <div class="progress-bar" id="bar"></div>
@@ -82,11 +74,11 @@
 
     <div class="mm-parallax mm-pllx">
         <div class="mm-caption">
-            <span class="border">VFX</span>
+            <span class="border mm-overlay-dark">VFX</span>
         </div>
     </div>
 
-    <div class="w3-container w3-theme">
+    <div class="w3-container mm-surface">
         <div class="w3-padding-64">
             <div class="w3-mobile w3-center">
                 <h1>Visual Effects</h1>
@@ -95,21 +87,13 @@
         </div>
     </div>
 
-    <footer class="w3-theme-d1">
+    <footer id="footer" class="mm-base">
         <div class="w3-center w3-padding-64">
             Copyright &copy; 2019 Matthew McCall <br> All Rights Reserved.
         </div>
     </footer>
 
     <script>
-        function swapTheme() {
-            if (document.getElementById("pageTheme").getAttribute("href") == "css/light.css") {
-                document.getElementById("pageTheme").setAttribute("href", "css/dark.css");
-            } else {
-                document.getElementById("pageTheme").setAttribute("href", "css/light.css");
-            }
-        }
-
         window.onscroll = function () { scrollUpdate() };
 
         function scrollUpdate() {
