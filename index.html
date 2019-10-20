@@ -174,7 +174,7 @@
         </div>
     </div>
 
-    <footer class="w3-theme-d1">
+    <footer id="footer" class="w3-theme-d1">
         <div class="w3-center w3-padding-64">
             Copyright &copy; 2019 Matthew McCall <br> All Rights Reserved.
         </div>
@@ -184,8 +184,10 @@
         function swapTheme() {
             if (document.getElementById("pageTheme").getAttribute("href") == "css/light.css") {
                 document.getElementById("pageTheme").setAttribute("href", "css/dark.css");
+                document.getElementById("footer").className = "w3-theme-dark";
             } else {
                 document.getElementById("pageTheme").setAttribute("href", "css/light.css");
+                document.getElementById("footer").className = "w3-theme-d1";
             }
         }
 

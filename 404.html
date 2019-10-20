@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matthew McCall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="ydxG5sCcrFAx_7gK87ppqwpJUnWrkG_3cSiv_BehgkM" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/mm.css">
+    <link rel="stylesheet" href="css/light.css" id="pageTheme">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149997059-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149997059-1');
+    </script>
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .mm-pllx {
+            background-image: url("assets/images/RoyalOntarioMuseum.jpg");
+        }
+
+        .mm-pllx-0 {
+            background-image: url("assets/images/Matrix.gif");
+        }
+
+        .mm-pllx-1 {
+            background-image: url("assets/images/Minecraft.png");
+        }
+
+        .mm-pllx-2 {
+            background-image: url("assets/images/FallsView.jpg");
+        }
+
+        .mm-pllx-3 {
+            background-image: url("assets/images/GarageBand.png");
+        }
+
+        .mm-pllx-4 {
+            background-image: url("assets/images/Collage.png");
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-theme">
+            <a class="w3-bar-item w3-button w3-border-theme w3-topbar w3-hover-border-theme w3-hover-none w3-hover-text-theme" href="index.html">Matthew McCall</a>
+            <a class="w3-bar-item w3-button w3-border-theme w3-topbar w3-hover-border-theme w3-hover-none w3-hover-text-theme" href="vfx.html">VFX</a>
+            <a class="w3-bar-item w3-button w3-border-theme w3-topbar w3-hover-border-theme w3-hover-none w3-hover-text-theme" href="frcpl/index.html">FRC</a>
+            <div class="w3-right">
+                <button onclick="swapTheme()" class="w3-bar-item w3-button w3-hover-theme">
+                    <i class="material-icons">settings_brightness</i>
+                </button>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="bar"></div>
+        </div>
+    </div>
+
+    <div class="mm-parallax mm-pllx-0">
+        <div class="mm-caption">
+            <span class="border">Page Not Found</span>
+        </div>
+    </div>
+
+    <div class="w3-container w3-theme">
+        <div class="w3-padding-64">
+            <div class="w3-mobile w3-center">
+                <h1>Error 404: Page Not Found</h1>
+                <p>You seem to be a bit lost. Try returning to our main site <a href="index.html">here</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-theme-d1">
+        <div class="w3-center w3-padding-64">
+            Copyright &copy; 2019 Matthew McCall <br> All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        function swapTheme() {
+            if (document.getElementById("pageTheme").getAttribute("href") == "css/light.css") {
+                document.getElementById("pageTheme").setAttribute("href", "css/dark.css");
+            } else {
+                document.getElementById("pageTheme").setAttribute("href", "css/light.css");
+            }
+        }
+
+        window.onscroll = function () { scrollUpdate() };
+
+        function scrollUpdate() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("bar").style.width = scrolled + "%";
+        }
+    </script>
+
+</body>
+
+</html>
