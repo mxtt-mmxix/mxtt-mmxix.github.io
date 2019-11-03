@@ -15,8 +15,8 @@
         <a class="w3-bar-item w3-button" href="index.html">Welcome</a>
         <a class="w3-bar-item w3-button" href="BriefConceptOfComputerCoding.html">Concept</a>
         <a class="w3-bar-item w3-button" href="CreatingAJavaFile.html">Naming Files</a>
-        <a class="w3-bar-item w3-button w3-theme" href="Variables.html">Variables</a>
-        <a class="w3-bar-item w3-button" href="Operators.html">Operators</a>
+        <a class="w3-bar-item w3-button" href="Variables.html">Variables</a>
+        <a class="w3-bar-item w3-button w3-theme" href="Operators.html">Operators</a>
     </nav>
 
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay">
@@ -39,7 +39,92 @@
 
                     <h2>Operators</h2>
                     <p>Operators in Java are modifiers that can be used quickly and easily.</p>
-
+                    <ul>
+                        <li>The -- operator will take a numerical value and reduce the value by 1.</li>
+                        <li>The ++ operator will take a numerical value and increase the value by 1.</li>
+                        <li>The > operator checks two values and to see if the value to the left of the > operator is greater than the value to the right of the > operator. If the value on the left is greater than the right value then it will return true, if not false.</li>
+                        <li>Likewise, with the > operator, the < operator checks two values and to see if the value to the left of the < operator is less than the value to the right of the < operator. If the value on the left is less than then it will return true, if not false.</li> <li>The = operator is called the assignment operator in which is used for assigning variables, or objects values</li>
+                        <li>The == operator is different from the assignment operator as this operator checks between 2 values and determines if they refer to the same object or of variables have the same value. In which if the values are the same, then this operator will return true, if not, false</li>
+                        <li>The != operator hecks between 2 values and determines if they don’t refer to the same object or of variables have the same value. In which if the values aren’t the same, then this operator will return true, if not, false</li>
+                        <li>
+                            The && and || allows for complex conditionals in which checks two conditions to be checked. But there’s a difference between the && and || operators. The && must have the two conditionals true in order to give a final value of true.
+                            <br>
+                            <br>
+                            <strong>Example</strong>
+                            <br>
+                            (true && true) will return true, (true && false) and (false && true) and (false && false) will return false.
+                            <table class="w3-table w3-bordered">
+                                <tr>
+                                    <th>IN A</th>
+                                    <th>IN B</th>
+                                    <th>OUT</th>
+                                </tr>
+                                <tr>
+                                    <td>true</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>true</td>
+                                    <td>false</td>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <td>false</td>
+                                    <td>true</td>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <td>false</td>
+                                    <td>false</td>
+                                    <td>false</td>
+                                </tr>
+                            </table>
+                            <br>
+                            The || operator must have one of the two conditionals true in order to give a final value of true.
+                            <br>
+                            <br>
+                            <strong>Example</strong>
+                            <br>
+                            (true || true) and (true || false) and (false || true) will return true, (false || false) will return false
+                            <table class="w3-table w3-bordered">
+                                <tr>
+                                    <th>IN A</th>
+                                    <th>IN B</th>
+                                    <th>OUT</th>
+                                </tr>
+                                <tr>
+                                    <td>true</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>true</td>
+                                    <td>false</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>false</td>
+                                    <td>true</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>false</td>
+                                    <td>false</td>
+                                    <td>false</td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <h3>More Operators!</h3>
+                    <ul>
+                        <li>The += operator will take the current value of the variable being assigned and add the value that is assigned to it.</li>
+                        <li>The -= operator will take the current value of the variable being assigned and subtract the value that is assigned to it.</li>
+                        <li>The *= operator will take the current value of the variable being assigned and multiply the value that is assigned to it.</li>
+                        <li>The /= operator will take the current value of the variable being assigned and divide the value that is assigned to it.</li>
+                        <li>The %= operator will take the current value of the variable being assigned and modulo the value that is assigned to it.</li>
+                    </ul>
+                    <p>This lesson is still a work in progress and will be updated to include more information and examples.</p>
                 </div>
             </div>
             <div class="w3-quarter">
