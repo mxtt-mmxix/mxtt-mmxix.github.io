@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <body>
-
     <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="Sidebar">
         <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="material-icons">close</i></a>
         <a class="w3-bar-item w3-button" href="index.html">Welcome</a>
@@ -17,26 +16,23 @@
         <a class="w3-bar-item w3-button" href="CreatingAJavaFile.html">Naming Files</a>
         <a class="w3-bar-item w3-button" href="Variables.html">Variables</a>
         <a class="w3-bar-item w3-button w3-theme" href="Operators.html">Operators</a>
+        <a class="w3-bar-item w3-button" href="Arrays.html">Arrays</a>
+        <a class="w3-bar-item w3-button" href="Loops.html">Loops</a>
+        <a class="w3-bar-item w3-button" href="Methods.html">Methods</a>
     </nav>
-
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay">
     </div>
-
     <div class="w3-main" style="margin-left:250px;">
-
         <div id="Top" class="w3-container w3-top w3-theme w3-large">
             <p><i class="material-icons w3-button w3-theme w3-hide-large w3-xlarge" style="top: 0px;" onclick="w3_open()">menu</i>
                 <span id="Intro" class="w3-hide">Operators</span></p>
         </div>
-
         <header class="w3-container w3-theme" style="padding:64px 32px">
             <h1 class="w3-xxxlarge">Operators</h1>
         </header>
-
         <div class="w3-row">
-            <div class="w3-threequarter">
+            <div class="w3-twothird">
                 <div class="w3-container" style="padding:32px">
-
                     <h2>Operators</h2>
                     <p>Operators in Java are modifiers that can be used quickly and easily.</p>
                     <ul>
@@ -46,14 +42,10 @@
                         <li>Likewise, with the > operator, the < operator checks two values and to see if the value to the left of the < operator is less than the value to the right of the < operator. If the value on the left is less than then it will return true, if not false.</li> <li>The = operator is called the assignment operator in which is used for assigning variables, or objects values</li>
                         <li>The == operator is different from the assignment operator as this operator checks between 2 values and determines if they refer to the same object or of variables have the same value. In which if the values are the same, then this operator will return true, if not, false</li>
                         <li>The != operator hecks between 2 values and determines if they don’t refer to the same object or of variables have the same value. In which if the values aren’t the same, then this operator will return true, if not, false</li>
-                        <li>
-                            The && and || allows for complex conditionals in which checks two conditions to be checked. But there’s a difference between the && and || operators. The && must have the two conditionals true in order to give a final value of true.
-                            <br>
+                        <li> The && and || allows for complex conditionals in which checks two conditions to be checked. But there’s a difference between the && and || operators. The && must have the two conditionals true in order to give a final value of true. <br>
                             <br>
                             <strong>Example</strong>
-                            <br>
-                            (true && true) will return true, (true && false) and (false && true) and (false && false) will return false.
-                            <table class="w3-table w3-bordered">
+                            <br> (true && true) will return true, (true && false) and (false && true) and (false && false) will return false. <table class="w3-table w3-bordered">
                                 <tr>
                                     <th>IN A</th>
                                     <th>IN B</th>
@@ -80,14 +72,10 @@
                                     <td>false</td>
                                 </tr>
                             </table>
-                            <br>
-                            The || operator must have one of the two conditionals true in order to give a final value of true.
-                            <br>
+                            <br> The || operator must have one of the two conditionals true in order to give a final value of true. <wbr> (Try replacing && with || in the IDE on the right and see how it affects the code.) <br>
                             <br>
                             <strong>Example</strong>
-                            <br>
-                            (true || true) and (true || false) and (false || true) will return true, (false || false) will return false
-                            <table class="w3-table w3-bordered">
+                            <br> (true || true) and (true || false) and (false || true) will return true, (false || false) will return false <table class="w3-table w3-bordered">
                                 <tr>
                                     <th>IN A</th>
                                     <th>IN B</th>
@@ -114,6 +102,7 @@
                                     <td>false</td>
                                 </tr>
                             </table>
+                            <br>
                         </li>
                     </ul>
                     <h3>More Operators!</h3>
@@ -124,22 +113,18 @@
                         <li>The /= operator will take the current value of the variable being assigned and divide the value that is assigned to it.</li>
                         <li>The %= operator will take the current value of the variable being assigned and modulo the value that is assigned to it.</li>
                     </ul>
-                    <p>This lesson is still a work in progress and will be updated to include more information and examples.</p>
                 </div>
             </div>
-            <div class="w3-quarter">
+            <div class="w3-third">
                 <div class="w3-container w3-padding-48">
-                    <img src="assets/img/Logo_Transparent_760x760.png" width="100%">
+                    <iframe style="width: 100%; height: 835px;" src="https://www.jdoodle.com/embed/v0/1FHQ" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
-
         <footer class="w3-container w3-theme" style="padding:32px">
             <p>Copyright BNCHS Sentinels <br> Matthew McCall &copy; 2019. All Rights Reserved.</p>
         </footer>
-
     </div>
-
     <script>
         // Open and close the sidebar on medium and small screens
         function w3_open() {
@@ -177,13 +162,10 @@
             }
         }
     </script>
-
     <script src="js/script.js"></script>
-
     <script>
         w3CodeColor();
     </script>
-
 </body>
 
 </html>

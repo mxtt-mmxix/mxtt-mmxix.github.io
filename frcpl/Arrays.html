@@ -9,62 +9,64 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <body>
-
     <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="Sidebar">
         <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="material-icons">close</i></a>
         <a class="w3-bar-item w3-button" href="index.html">Welcome</a>
-        <a class="w3-bar-item w3-button w3-theme" href="BriefConceptOfComputerCoding.html">Concept</a>
+        <a class="w3-bar-item w3-button" href="BriefConceptOfComputerCoding.html">Concept</a>
         <a class="w3-bar-item w3-button" href="CreatingAJavaFile.html">Naming Files</a>
         <a class="w3-bar-item w3-button" href="Variables.html">Variables</a>
         <a class="w3-bar-item w3-button" href="Operators.html">Operators</a>
-        <a class="w3-bar-item w3-button" href="Arrays.html">Arrays</a>
+        <a class="w3-bar-item w3-button w3-theme" href="Arrays.html">Arrays</a>
         <a class="w3-bar-item w3-button" href="Loops.html">Loops</a>
         <a class="w3-bar-item w3-button" href="Methods.html">Methods</a>
+
     </nav>
-
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay"></div>
-
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="Overlay">
+    </div>
     <div class="w3-main" style="margin-left:250px;">
-
         <div id="Top" class="w3-container w3-top w3-theme w3-large">
             <p><i class="material-icons w3-button w3-theme w3-hide-large w3-xlarge" style="top: 0px;" onclick="w3_open()">menu</i>
-                <span id="Intro" class="w3-hide">A Brief Concept of Computer Coding</span></p>
+                <span id="Intro" class="w3-hide">Arrays</span></p>
         </div>
-
         <header class="w3-container w3-theme" style="padding:64px 32px">
-            <h1 class="w3-xxxlarge">A Brief Concept of Computer Coding</h1>
+            <h1 class="w3-xxxlarge">Arrays</h1>
         </header>
-
         <div class="w3-row">
-            <div class="w3-threequarter">
+            <div class="w3-twothird">
                 <div class="w3-container" style="padding:32px">
-
-                    <h2>A Brief Concept of Computer Coding</h2>
-                    <p>Before we start learning about how to write code, we’ll need to first understand how coding works and how programmers make use of their code. There are different forms of code. And the lowest is: Machine Code, and this is code in which only the computer understands where we humans do not understand. And then there’s High Level Code that are code that we can understand that take form as programming languages like Java. Which we will be using in the near future.</p>
-                    <br>
-                    <h3>To explain</h3>
-                    <p>Computers and humans have different programming languages we understand to make technology work. Thus we need a way to communicate our code to computer code to make the computer do what we want. And the method to do so is, we have something called a compiler in which our code is transformed into code that the computer understands.</p>
-                    <br>
-                    <h3>To make an analogy</h3>
-                    <p>We programmers who code in java will be like Person A who only speaks English. While the computer that only understand machine code will be like Person B who only Chinese or Spanish. Now in this scenario, Person A needs Person B to do a certain task, but Person A can’t communicate with Person B of the task that Person B needs to do. Thus a translator needs to translate information from Person A to Person B and every time person A needs Person B to do something, a translator is needed. This is the same concept with us programmers compiling our code with each new code as to translate the code we can utilize into machine code that the computer will understand.</p>
+                    <h2>Arrays</h2>
+                    <p>Arrays are basically a collection of data. It’s more easy to remember arrays as collection of values of the same variable type.</p>
+                    <h3>How To Declare Arrays</h3>
+                    <p>The initialization of arrays are quite similar to initializing variables, in which there are slight differences.</p>
+                    <p>Rules for declaring arrays are as follows:</p>
+                    <ul>
+                        <li>Writing brackets [] at the end of variable type, and for assigning values to array, the values must be surrounded by curly brackets {}.</li>
+                        <li>The values of the array must match the variable type declared. Also, when inputting values into the array, the values must be separated by commas.</li>
+                    </ul>
+                    <h3>Indexes</h3>
+                    <p>When there are multiple values of an array, and you want to access a certain value of the array, you may find the index, the place where a specific value may be found. But one key thing you must know is that, the first value of the array starts with an index of zero, and the next consecutive values follow through.</p>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        String[] example = {"Hello", "World", "What’s", "Up?", "The sky!"};
+                    </div>
+                    <p>The first value, “Hello”, has the index 0. <br>
+                        The second value, “World”, has the index 1. <br>
+                        The third value, “What’s”, has the index 2. <br>
+                        The fourth value, “Up?”, has the index 3. <br>
+                        The fifth value, “The sky!”, has the index 4. <br>
+                    </p>
                 </div>
             </div>
-            <div class="w3-quarter">
+            <div class="w3-third">
                 <div class="w3-container w3-padding-48">
-                    <img src="assets/img/Logo_Transparent_760x760.png" width="100%">
+                    <iframe style="width: 100%; height: 835px;" src="https://www.jdoodle.com/embed/v0/1G57" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
         <footer class="w3-container w3-theme" style="padding:32px">
             <p>Copyright BNCHS Sentinels <br> Matthew McCall &copy; 2019. All Rights Reserved.</p>
         </footer>
-
     </div>
-
     <script>
-
-        document.onload = function () { checkConnectivity() }
-
         // Open and close the sidebar on medium and small screens
         function w3_open() {
             document.getElementById("Sidebar").style.display = "block";
@@ -101,13 +103,10 @@
             }
         }
     </script>
-
     <script src="js/script.js"></script>
-
     <script>
         w3CodeColor();
     </script>
-
 </body>
 
 </html>
