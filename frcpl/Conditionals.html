@@ -17,9 +17,9 @@
         <a class="w3-bar-item w3-button" href="CreatingAJavaFile.html">Naming Files</a>
         <a class="w3-bar-item w3-button" href="Variables.html">Variables</a>
         <a class="w3-bar-item w3-button" href="Operators.html">Operators</a>
-        <a class="w3-bar-item w3-button" href="Conditionals.html">Conditionals</a>
+        <a class="w3-bar-item w3-button w3-theme" href="Conditionals.html">Conditionals</a>
         <a class="w3-bar-item w3-button" href="Arrays.html">Arrays</a>
-        <a class="w3-bar-item w3-button w3-theme" href="Loops.html">Loops</a>
+        <a class="w3-bar-item w3-button" href="Loops.html">Loops</a>
         <a class="w3-bar-item w3-button" href="Methods.html">Methods</a>
     </nav>
 
@@ -29,17 +29,67 @@
 
         <div id="Top" class="w3-container w3-top w3-theme w3-large">
             <p><i class="material-icons w3-button w3-theme w3-hide-large w3-xlarge" style="top: 0px;" onclick="w3_open()">menu</i>
-                <span id="Intro" class="w3-hide">Loops</span></p>
+                <span id="Intro" class="w3-hide">Conditionals</span></p>
         </div>
 
         <header class="w3-container w3-theme" style="padding:64px 32px">
-            <h1 class="w3-xxxlarge">Loops</h1>
+            <h1 class="w3-xxxlarge">Conditionals</h1>
         </header>
 
         <div class="w3-row">
             <div class="w3-threequarter">
                 <div class="w3-container" style="padding:32px">
-                    <h2>Coming Soon!</h2>
+                    <h2>Conditionals</h2>
+                    <p>Conditionals are used for checking boolean expressions, in which conditionals do the function they imply which is to check whether something is true or false.</p>
+                    <p>The syntax for conditionals are simple:</p>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        if (condition) <br>
+                        {<br>
+                        &emsp;//code goes here<br>
+                        }
+                    </div>
+                    <p>If you wish to have more conditions on following the first condition, simply write:</p>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        if (condition) <br>
+                        {<br>
+                        &emsp;//code goes here<br>
+                        } <br>
+                        else if (condition0) <br>
+                        { <br>
+                        &emsp;//more code goes here <br>
+                        }
+                    </div>
+                    <p>If no conditions are met, you should write:</p>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        if (condition) <br>
+                        {<br>
+                        &emsp;//code goes here<br>
+                        } <br>
+                        else if (condition0) <br>
+                        { <br>
+                        &emsp;//more code goes here <br>
+                        } <br>
+                        else <br>
+                        {<br>
+                        &emsp;//even more code goes here <br>
+                        }
+                    </div>
+                    <div class="w3-panel w3-pale-yellow w3-border-yellow w3-border w3-leftbar">
+                        <h3>Note:</h3>
+                        <p>You must use curly brackets to show where the code starts and where the code ends. If this is not done correctly you will run into buildtime errors.</p>
+                    </div>
+                    <p>Another thing to keep in mind is that if the if condition or an else if condition is met, the following else if and else statements will not be executed along with the code of the else if/else statements</p>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        if (condition) <br>
+                        {<br>
+                        &emsp;//This will run, the code will exit the if statement.<br>
+                        } <br>
+                        else if (condition0) <br>
+                        { <br>
+                        &emsp;//Regardless of trueness of this conditional statement. It will not run as the first conditional has already been executed thus this conditional will be ignored.<br>
+                        }
+                    </div>
+                    <p>Another thing to keep in mind is that there is something called a nested conditional. They are conditionals inside other conditional.</p>
                 </div>
             </div>
             <div class="w3-quarter">
