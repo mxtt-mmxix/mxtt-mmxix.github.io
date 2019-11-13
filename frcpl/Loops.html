@@ -39,8 +39,41 @@
         <div class="w3-row">
             <div class="w3-threequarter">
                 <div class="w3-container" style="padding:32px">
-                    <h2>Coming Soon!</h2>
-                    <p>Until the lessons are finished, check out the "While Loop" tutorial by <a href="https://www.w3schools.com/java/java_while_loop.asp">W3 Schools</a>. Furhtermore, you should look at <a href="https://www.w3schools.com/java/java_for_loop.asp">"For Loops"</a>.</p>
+                    <h2>Loops</h2>
+                    <p>Loops allow us to repeat code numerous times without having to retype the code every single time.</p>
+                    <p>Their purpose is to reduce redundancy which basically means loops reduce repeated code. To elaborate, whenever programmers type up code, and they need to make the code do a certain function multiple times in a row, it is likely that code will be repeated to make the desired function occur. For example, setting a robot to move forward for a certain amount of time.</p>
+                    <h3>While Loops</h3>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        while (condition) <br>
+                        {<br>
+                        &emsp;//Code goes here.<br>
+                        } <br>
+                    </div>
+                    <p>A while loop will execute a body of code depending if the condition it checks remains true otherwise it will not execute the body of code it has.</p>
+                    <p>They are used for making specific bodies of code execute multiple times in a row for an undetermined amount of times that you don’t know. For example, imagine there’s a robot has a sensor that detects proximity to how close the robot is to the wall. And your goal for the robot is for it to move to the wall and then stop at the wall. Thus you should write for the condition that the value of a sensor should not be exceeded in which the robot may stop at a certain point near the wall.</p>
+                    <h3>For Loops</h3>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        for (iterable, condition, step) <br>
+                        {<br>
+                        &emsp;//Code goes here.<br>
+                        } <br>
+                    </div>
+                    <h4>Example:</h4>
+                    <div class="w3-code javaHigh notranslate w3-theme-dark">
+                        for (int i, i &lt; 16, i++) <br>
+                        {<br>
+                        &emsp;//Code goes here.<br>
+                        } <br>
+                    </div>
+                    <p>A for loop has 3 parts that must be completed.</p>
+                    <h5>Iterable</h5>
+                    <p>This part requires that you have a numeric variable declared. Which means you need to use variables that have the int or double variable type. Then type a semicolon after the declaration of the variable. Note that this variable’s value may only be accessed by the body of code in the for loop.</p>
+                    <h5>Condition</h5>
+                    <p>This part requires you to incorporate the local variable you’ve declared in part one. This will make your loop execute a certain amount of times. Then type a semicolon after the declaration of the variable.</p>
+                    <h5>Step</h5>
+                    <p>This part requires you to set how the local variable you’ve declared in part one is affected. By setting how the variable is affected, this can affect how many times the loop iterates.</p>
+                    <br>
+                    <p>For loops are useful for making specific bodies of code execute multiple times in a row for a set amount of times that you want the loop to occur. For example, you want a robot to move forward 3 inches. And of the given code, the body of code will move the robot 1 inch so you want that code to repeat 3 times as to make the robot move 3 inches.</p>
                 </div>
             </div>
             <div class="w3-quarter">
