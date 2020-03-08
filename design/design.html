@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matthew McCall</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5QRTRWG');</script>
-    <!-- End Google Tag Manager -->
-</head>
-
+<title>Matthew McCall Project 2</title>
+<!-- Matthew McCall, Period 1, 5/3/2020 -->
 <style>
     html,
     body {
-        height: 100%;
         margin: 0px;
-        scroll-behavior: smooth;
+        height: 100%;
+        overflow: hidden;
     }
 
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'IBM Plex Sans', sans-serif;
+    p,
+    ol,
+    li {
+        font-size: 14pt;
+        line-height: 1.5;
     }
 
-    .material-icons {
-        vertical-align: -14%
+    .horizontal {
+        float: left;
+        height: 100%;
+        width: 50%;
+        position: relative;
+    }
+
+    .title {
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .title-label {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+    .content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 32px;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    .content-bottom {
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -ms-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+        color: white;
+        padding: 32px;
+        max-width: 50%;
+        text-align: center;
     }
 </style>
 
-<body class="w3-light-gray w3-text-dark-gray">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QRTRWG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div class="w3-top">
-        <nav class="w3-black w3-text-gray">
-            <a href="https://mccall.app" class="w3-bar-item w3-button w3-hover-none w3-hover-text-white">Matthew McCall</a>
-            <a href="https://design.mccall.app" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-blue w3-text-blue">Design</a>
-            <a href="https://develop.mccall.app" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-indigo">Develop</a>
-            <a href="https://vfx.mccall.app" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-deep-purple">VFX</a>
-            <a href="https://web.mccall.app" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-purple">Web</a>
-            <a href="https://mccall.app/frcpl/index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-red">FIRST Robotics</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="menu()">&#9776;</a>
-        </nav>
-
-        <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-text-gray">
-            <a href="https://design.mccall.app" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue">Design</a>
-            <a href="https://develop.mccall.app" class="w3-bar-item w3-button w3-hover-none w3-hover-text-indigo">Develop</a>
-            <a href="https://vfx.mccall.app" class="w3-bar-item w3-button w3-hover-none w3-hover-text-deep-purple">VFX</a>
-            <a href="https://web.mccall.ap" class="w3-bar-item w3-button w3-hover-none w3-hover-text-purple">Web</a>
-            <a href="https://mccall.app/frcpl/index.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-red">FIRST Robotics</a>
+<body>
+    <div class="horizontal title">
+        <div class="title-label">
+            <h1>McCall Design</h1>
         </div>
     </div>
-
-    <header class="w3-padding-64" style="height: 100%;">
-        <div class="w3-center w3-display-middle">
-            <h1 style="font-size: 95px;">Graphic Design</h1>
-            <h2>Coming Soon!</h2>
+    <div class="horizontal" style="background: rgb(20, 20, 20)">
+        <div class="content">
+            <h1>Coming Soon!</h1>
+            <hr>
+            <p>Thank you for your patience.</p>
         </div>
-    </header>
-
-    <footer class="w3-black w3-padding-64 w3-center">
-        <p>Matthew McCall &copy; 2020. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        function menu() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+    </div>
 </body>
 
 </html>
