@@ -89,32 +89,61 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Welcome to 5599's FRC Java Tutorials</h1>
-                <p class="lead">These tutorials will get you up to speed on FRC Java. We cover everything from "Hello, World!" to full autonomous operation.</p>
+                <h1 class="display-4">Concepts</h1>
+                <p class="lead">How and why programming works.</p>
             </div>
         </div>
 
         <div class="container">
-            <h2>About FRC 5599 Sentinels</h2>
-            <p>We are a robotics team that competes in the <i>FIRST</i> Robotics Competition (FRC). Every year a new robot is built, however these robots do not move themselves. As a result, it is our job as programmers to provide a series of instructions to the robot to make it follow human command. You may know this process as "programming".</p>
-            <p>Throughout this course, you will learn the fundamentals of programming. Furthermore you will learn to make a fully fledged out code base for this year's robot from scratch. The following shows an example of example code. Be sure to look out for these boxes throughout this course.</p>
+            <h2>Machine Code</h2>
+            <p>You guys may know that computers operate using 1s and and 0s. This is true as 1s and 0s, when combined can create thigs like <code>00010101 11011111</code> or 5599, in decimal. In short each instruction such as <code>ADD</code>, <code>SUBTRACT</code>, and <code>DIVIDE</code> have a number associated with it. Of course, writing 1s and 0s gets tedious over time, so we created hexadecimal. <code>00010101 11011111</code> translates to <code>15DF</code>, much shorter, which is still 5599. By all means the number 5599 is still represented as <code>00010101 11011111</code> in computer memory, but we will simply say <code>15DF</code>, because it is much shorter and easier to work with. Same way we say <i>idk</i> instead of <i>i don't know</i>, because that is easier to work with, and you guys probably have no idea about what I am talking about. Lets take a look at an example of this <i>machine code</i></p>
+
+            <script src="https://gist.github.com/mxtt-mmxix/0f4d62a5f95a997e29b6934cc139ac4a.js"></script>
+
+            <p>Overwhelming? Agreed. That is why a couple of smart people came up with on the first <i>human-readable</i> programming languages. Here is the same code, in this new <i>human-readable</i> language.</p>
+
+            <h2>Assembly</h2>
+
+            <script src="https://gist.github.com/mxtt-mmxix/acd66c30cf315df9c8e8670edeedb027.js"></script>
+
+            <p>Introducing Assembly language. This much better than just 1s and 0s (Or hexadecimal if you will). But it still is not quite clear what it does, however feel free to guess what it does. Eventually programmers decided they need an even better language to work with, so they created a new higher level programming language, called C.</p>
+
+            <h2>High Level Langauges</h2>
+
+            <script src="https://gist.github.com/mxtt-mmxix/90d3d48807f7f65b1aaa65200e6865b7.js"></script>
+
+            <p>This is much better, it is way easier to read and write. These are the type of languages you will be working with, although we will not be using C, but Java.</p>
+
             <script src="https://gist.github.com/mxtt-mmxix/e02affb9b5e93e242c760afb3e9be32c.js"></script>
-            <p>Tips and tricks and tricks are provided in alert boxes as demonstrated below</p>
-            <div class="alert alert-secondary" role="alert">
-                Look out for these!
-            </div>
+
+            <p>C and Java are the not the only programming lanuages however. there are plenty of others for you to try out.</p>
+
+            <h3>FORTRAN</h3>
+
+            <script src="https://gist.github.com/mxtt-mmxix/6363ec7de94b8ca0c48e1f3c18ee8081.js"></script>
+
+            <h3>Python</h3>
+
+            <script src="https://gist.github.com/mxtt-mmxix/b50040943933df66ba852d8a585bdb6e.js"></script>
+
+            <p>And much, much, more...</p>
+
+            <p>What you just learned about is called <i>abstraction</i>. The transistion from 1s and 0s to assembly, to high-level programming languages are just one example of abstraction.</p>
+
+            <p>Congratulations, now that you know how computers work, time to actually learn how to program them.</p>
+
         </div>
 
         <nav aria-label="Page navigation example" style="padding-top: 2.5em;">
             <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">Previous</a>
                 </li>
-                <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
-                <li class="page-item"><a class="page-link" href="concept.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item active"><a class="page-link" href="concept.html">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="concept.html">Next</a>
+                    <a class="page-link" href="#">Next</a>
                 </li>
             </ul>
         </nav>
